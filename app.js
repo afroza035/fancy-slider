@@ -44,6 +44,9 @@ const selectItem = (event, img) => {
   if (item === -1) {
     sliders.push(img);
   }
+  else {
+    sliders.splice(item, 1)
+  }
 }
 var timer
 const createSlider = () => {
@@ -133,7 +136,7 @@ document.getElementById('duration')
     if (event.key == 'Enter') {
       document.getElementById("create-slider").click();
     }
-  
+
   });
 document.getElementById('search')
   .addEventListener('keypress', function (event) {
@@ -141,15 +144,15 @@ document.getElementById('search')
     if (event.key == 'Enter') {
       document.getElementById("search-btn").click();
     }
-  
+
   });
 
 
-    
-    
 
-      
-  
+
+
+
+
 
 
 
